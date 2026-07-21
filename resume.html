@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio</title>
+
+    <style>
+      /* Font Sarabun */
+
+      @import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Sarabun", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+
+        background: linear-gradient(135deg, #020617, #0f172a, #001f54);
+
+        color: white;
+      }
+
+      /* Container */
+
+      .container {
+        width: 100%;
+
+        max-width: 1000px;
+
+        margin: auto;
+
+        padding: 40px 20px;
+      }
+
+      /* Title */
+
+      h1 {
+        text-align: center;
+
+        font-size: 42px;
+
+        font-weight: 700;
+
+        margin-bottom: 45px;
+
+        background: linear-gradient(90deg, #38bdf8, #2563eb, #60a5fa);
+
+        -webkit-background-clip: text;
+
+        color: transparent;
+      }
+
+      /* Portfolio Card */
+
+      .portfolio-item {
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.13),
+          rgba(255, 255, 255, 0.04)
+        );
+
+        backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        border-radius: 24px;
+
+        overflow: hidden;
+
+        margin-bottom: 40px;
+
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+
+        transition: 0.3s ease;
+      }
+
+      .portfolio-item:hover {
+        border-color: #38bdf8;
+      }
+
+      /* Description */
+
+      .content {
+        padding: 30px;
+      }
+
+      .content h2 {
+        font-size: 30px;
+
+        font-weight: 700;
+
+        color: #e0f2fe;
+
+        margin-bottom: 15px;
+      }
+
+      .content p {
+        font-size: 18px;
+
+        line-height: 1.8;
+
+        color: #cbd5e1;
+      }
+
+      /* Images */
+
+      .images {
+        width: 100%;
+
+        background: #020617;
+      }
+
+      .images img {
+        width: 100%;
+
+        height: auto;
+
+        display: block;
+
+        object-fit: contain;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Footer Space */
+
+      .images img:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Mobile */
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 25px 12px;
+        }
+
+        h1 {
+          font-size: 32px;
+
+          margin-bottom: 30px;
+        }
+
+        .portfolio-item {
+          border-radius: 18px;
+
+          margin-bottom: 25px;
+        }
+
+        .content {
+          padding: 20px;
+        }
+
+        .content h2 {
+          font-size: 24px;
+        }
+
+        .content p {
+          font-size: 20px;
+        }
+      }
+
+      /* Large Screen */
+
+      @media (min-width: 1200px) {
+        .images img {
+          max-height: 750px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>ภาพประกอบผลงานทางด้านอีสปอร์ต</h1>
+      <h1>นาย ภานุพงศ์ ชลสินธุ์</h1>
+
+      <!-- ผลงานที่ 1 -->
+
+      <div class="portfolio-item">
+        <div class="content">
+          <h2>ผู้ช่วยผู้ตัดสินการแข่งขัน</h2>
+          <h2>การแข่งขันกีฬาเยาวชนแห่งชาติ ครั้งที่41 “สุราษฎร์ธานีเกมส์”</h2>
+        </div>
+
+        <div class="images">
+          <img src="images/P1.jpg" />
+          <img src="images/P2.jpg" />
+        </div>
+      </div>
+
+      <!-- ผลงานที่ 2 -->
+
+      <div class="portfolio-item">
+        <div class="content">
+          <h2>ผู้ช่วยผู้ตัดสินการแข่งขัน</h2>
+          <h2>
+            การแข่งขัน กีฬานักเรียนองค์กรปกครองส่วนท้องถิ่นแห่งประเทศไทย
+            ครั้งที่39 “ เมืองคนดีเกมส์ ”
+          </h2>
+        </div>
+
+        <div class="images">
+          <img src="images/P3.jpg" />
+          <img src="images/P4.jpg" />
+          <img src="images/P5.jpg" />
+        </div>
+      </div>
+
+      <!-- ผลงานที่ 3 -->
+
+      <div class="portfolio-item">
+        <div class="content">
+          <h2>ผู้ช่วยผู้ตัดสินการแข่งขัน</h2>
+          <h2>
+            การแข่งขัน กีฬาเพื่อการพัฒนาสมรรถนะผู้เรียนโดยใช้กีฬาเป็นฐาน(กีฬา
+            กศจ.สุราษฎร์ธานี)
+          </h2>
+        </div>
+
+        <div class="images">
+          <img src="images/P6.jpg" />
+        </div>
+      </div>
+
+      <!-- ผลงานที่ 4 -->
+
+      <div class="portfolio-item">
+        <div class="content">
+          <h2>เข้าร่วมการอบรม</h2>
+          <h2>
+            โครงการอบรมพัฒนาองค์ความรู้สำหรับผู้ตัดสินอีสปอร์ต
+            ตามโครงการกีฬาเพื่อสร้างสังคมที่แข็งแรง สร้างอาชีพและรายได้
+            กีฬาเพื่อสร้างศักยภาพของประเทศ "Domestic Power" การพัฒนาเยาวชน Youth
+            Development ประจำปี 2568
+          </h2>
+        </div>
+
+        <div class="images">
+          <img src="images/P7.jpg" />
+          <img src="images/P8.jpg" />
+          <img src="images/P9.jpg" />
+        </div>
+      </div>
+
+      <!-- ผลงานที่ 5 -->
+
+      <div class="portfolio-item">
+        <div class="content">
+          <h2>การทำงานในตำแหน่ง ประธานชมรม PSU Surat Esport</h2>
+          <h2>ผู้จัดการแข่งขันและตัดสินการแข่งขัน  ในการแข่งขันกีฬาอีสปอร์ตทั้งหมดภายในมหาวิทยาลัย</h2>
+        </div>
+
+        <div class="images">
+          <img src="images/P10.jpg" />
+          <img src="images/P11.jpg" />
+          <img src="images/P12.jpg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
